@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.salama.aya.sunshine.MainActivity"
+        android:label="fragment_motion_layout"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/coordinatorMotionFragment"
+        android:name="com.salama.aya.sunshine.CoordinatorMotionFragment"
+        android:label="fragment_coordinator_motion"
+        tools:layout="@layout/fragment_coordinator_motion" />
+    <fragment
+        android:id="@+id/btnMotionLayoutFragment"
+        android:name="com.salama.aya.sunshine.MotionLayoutFragment"
+        android:label="MotionLayoutFragment"
+        tools:layout="@layout/fragment_motion_layout"/>
+</navigation>
